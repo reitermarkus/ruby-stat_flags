@@ -3,7 +3,6 @@ static VALUE rb_stat_flags(VALUE self);
 
 // everything below is copied from 'file.c'
 
-#include <sys/types.h>
 #include <sys/stat.h>
 
 #ifndef ST2UINT
