@@ -1,3 +1,6 @@
+#ifndef STAT_FLAGS_H
+#define STAT_FLAGS_H
+
 void Init_stat_flags(void);
 static VALUE rb_stat_flags(VALUE self);
 
@@ -17,3 +20,5 @@ get_stat(VALUE self)
     if (!st) rb_raise(rb_eTypeError, "uninitialized File::Stat");
     return st;
 }
+
+#endif
