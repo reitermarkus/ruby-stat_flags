@@ -48,4 +48,6 @@ matrix:
       osx_image: xcode8.2
       rvm: 2.4.0
 
-script: ./test.sh
+script:
+  - ./test.rb
+  - ./benchmark.rb
