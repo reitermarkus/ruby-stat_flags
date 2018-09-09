@@ -9,7 +9,7 @@ static VALUE rb_stat_flags(VALUE self);
 #include <sys/stat.h>
 
 #ifndef ST2UINT
-  #define ST2UINT(val) ((val) & ~(~1UL << (sizeof(val) * CHAR_BIT - 1)))
+#define ST2UINT(val) ((val) & ~(~1UL << (sizeof(val) * CHAR_BIT - 1)))
 #endif
 
 static struct stat*
